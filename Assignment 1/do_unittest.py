@@ -13,9 +13,10 @@
 # Author: Deep Learning Course (UvA) | Fall 2022
 # Date Created: 2021-11-01
 ################################################################################
+
 import unittest
 import numpy as np
-from modules import LinearModule, TanhModule, MSE, RELUModule, MLP
+from modules import LinearModule, TanhModule, MSE, MLP, RELUModule
 
 
 def rel_error(x, y):

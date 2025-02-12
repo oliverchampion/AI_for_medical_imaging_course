@@ -20,10 +20,10 @@ This module implements various modules of the network.
 You should fill in code into indicated sections.
 
 """
-import numpy as np
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
+import numpy as np
 
 
 
@@ -64,9 +64,7 @@ class LinearModule(object):
         #######################
         # PUT YOUR CODE HERE  #
         #######################
-
-        #hint: use the np.einsum function to deal with dimensions. I.e. np.einsum('ab,ac-->bc',A,B)  multiplies A (a by b shape) with B (b by c shape) such that it ends up with a matrix shaped b by c
-
+       #hint: use the np.einsum function to deal with dimensions. I.e. np.einsum('ab,ac-->bc',A,B)  multiplies A (a by b shape) with B (b by c shape) such that it ends up with a matrix shaped b by c
         #######################
         # END OF YOUR CODE    #
         #######################
@@ -87,7 +85,6 @@ class LinearModule(object):
         #######################
         # PUT YOUR CODE HERE  #
         #######################
-
 
         #######################
         # END OF YOUR CODE    #
