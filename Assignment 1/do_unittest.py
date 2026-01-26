@@ -89,7 +89,7 @@ class TestLayers(unittest.TestCase):
 
     def test_linear_backward(self):
         np.random.seed(42)
-        rel_error_max = 1e-5
+        rel_error_max = 11e-6
 
         for test_num in range(10):
             batch_size = np.random.choice(range(1, 20))
@@ -112,7 +112,7 @@ class TestLayers(unittest.TestCase):
 
     def test_relu_backward(self):
         np.random.seed(42)
-        rel_error_max = 1e-6
+        rel_error_max = 11e-7
 
         for test_num in range(10):
             batch_size = np.random.choice(range(1, 20))
@@ -130,7 +130,7 @@ class TestLayers(unittest.TestCase):
 
     def test_tanh_backward(self):
         np.random.seed(42)
-        rel_error_max = 1e-5
+        rel_error_max = 11e-6
 
         for test_num in range(10):
             batch_size = np.random.choice(range(1, 20))
@@ -148,7 +148,7 @@ class TestLayers(unittest.TestCase):
 
     def test_MLP(self):
         np.random.seed(42)
-        rel_error_max = 1e-5
+        rel_error_max = 11e-6
 
         for test_num in range(10):
             batch_size = np.random.choice(range(1, 20))
