@@ -152,7 +152,7 @@ def run(config):
     data = Scan_DataModule(config)
     classifier = Classifier(config)
     logger.watch(classifier)
-    checkpoint_callback = pl.callbacks.ModelCheckpoint(dirpath=config['checkpoint_folder_save'], monitor='val_f1')
+    checkpoint_callback = pl.callbacks.ModelCheckpoint(dirpath=config['checkpoint_folder_save'], monitor='val_f1', mode = 'max')
     trainer = pl.Trainer(accelerator=device, max_epochs=config['max_epochs'],
                          logger=logger, callbacks=[checkpoint_callback],
                          default_root_dir=config['bin'],
