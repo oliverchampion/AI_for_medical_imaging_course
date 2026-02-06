@@ -43,7 +43,7 @@ np.random.seed(SEED)
 np.random.RandomState(SEED)
 
 if platform == "linux" or platform == "linux2":
-    data_dir = '/gpfs/work5/0/prjs1312/data/classification'
+    data_dir = '/projects/prjs1945/data/classification'
 else:
     #set data location on your local computer. Data can be downloaded from:
     # https://surfdrive.surf.nl/files/index.php/s/QWJUE37bHojMVKQ

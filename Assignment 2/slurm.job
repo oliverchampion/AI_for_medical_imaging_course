@@ -8,13 +8,13 @@
 #SBATCH --time=04:00:00
 #SBATCH --output=slurm_output_%A.out
 
-module purge
-module load 2023
-module load PyTorch/2.1.2-foss-2023a-CUDA-12.1.1
+module load 2025
+module load Python/3.13.1-GCCcore-14.2.0
+module load CUDA/12.8.0
 
 # Your job starts in the directory where you call sbatch
-cd $HOME/AI_for_medical_imaging_course/Assignment\ 2
+cd $HOME/Assignment\ 2
 # Activate your environment
-source /gpfs/work5/0/prjs1312/venv/bin/activate
+source /projects/prjs1945/venv/bin/activate
 # Run your code
 srun python -u main_CNN.py
