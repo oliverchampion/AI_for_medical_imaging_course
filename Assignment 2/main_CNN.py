@@ -46,7 +46,7 @@ if platform == "linux" or platform == "linux2":
     data_dir = '/projects/prjs1945/data/classification'
 else:
     #set data location on your local computer. Data can be downloaded from:
-    # https://surfdrive.surf.nl/files/index.php/s/QWJUE37bHojMVKQ
+    # https://drive.google.com/drive/folders/1y8Fv8Eu8KlSRaxaOTlLfzrx2t2KRti9c?usp=drive_link
     # PW: deeplearningformedicalimaging
     data_dir = 'C:\scratch\Surf\Documents\Onderwijs\DeepLearning_MedicalImaging\opgaven\opgave 2\AI-Course_StudentChallenge\data\classification'
 
