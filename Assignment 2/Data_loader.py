@@ -63,6 +63,8 @@ class Scan_DataModule_Segm(pl.LightningDataModule):
   def val_dataloader(self):
     return DataLoader(self.val_dataset, batch_size = self.batch_size, shuffle=False)
 
+  def test_dataloader(self):
+    return DataLoader(self.test_dataset, batch_size = self.batch_size, shuffle=False)
 
 # Data module
 class Scan_Dataset(Dataset):
