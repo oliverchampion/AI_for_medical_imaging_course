@@ -163,7 +163,7 @@ def run(config_segm):
     model.eval()
 
     # make test dataloader
-    test_data = Scan_DataModule_Segm(test_data_dir)
+    test_data = Scan_DataModule_Segm(config_segm)
 
     # test model
     trainer = pl.Trainer()
